@@ -1,0 +1,14 @@
+
+Scenario: Register new user by providing data in all mandatory fields [90m# src/test/java/features/register.feature:3[0m
+  [32mGiven [0m[32mI navigate to url [0m[32m[1m"https://demo.nopcommerce.com/"[0m             [90m# StepDefinitions.i_navigate_to_url(java.lang.String)[0m
+  [32mWhen [0m[32mI click on register link[0m                                       [90m# StepDefinitions.i_click_on_register_link()[0m
+  [31mThen [0m[31mI should be navigated to register page[0m                         [90m# StepDefinitions.i_should_be_navigated_to_register_page()[0m
+      [31mjava.lang.NullPointerException
+	at base.BaseTest.getPageTitle(BaseTest.java:77)
+	at StepDefinitions.i_should_be_navigated_to_register_page(StepDefinitions.java:73)
+	at ✽.I should be navigated to register page(file:///Users/niharikasree/Desktop/Trainings/Batch5Sun/CucumberBdd_Junit5_Pom/src/test/java/features/register.feature:6)
+[0m
+  [36mWhen [0m[36mI select gender[0m                                                [90m# StepDefinitions.i_select_gender()[0m
+  [36mAnd [0m[36mI enter firstName lastName email password confirmPassword[0m       [90m# StepDefinitions.i_enter_first_name_last_name_email_password_confirm_password(io.cucumber.datatable.DataTable)[0m
+  [36mAnd [0m[36mI click on register button[0m                                      [90m# StepDefinitions.i_click_on_register_button()[0m
+  [36mThen [0m[36mregistration should be successful[0m                              [90m# StepDefinitions.registration_should_be_successful()[0m
